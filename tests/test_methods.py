@@ -13,7 +13,7 @@ def hello_test():
     This defines the expected usage, which can then be used in various test cases.
     Pytest will not execute this code directly, since the function does not contain the prefix "test"
     """
-    hello_world()
+    assert hello_world() == "string-0"
 
 
 def test_hello(unit_test_mocks: None):
